@@ -1,4 +1,6 @@
+
 # PersonalSite
+This website is developed in Angular for the purpose of putting my profile as website
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
 
