@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --scenePerspective: 1;
+  --scenePerspectiveOriginX: 50;
+  --scenePerspectiveOriginY: 30;
+  --itemZ: 2; // Gap between each cards
+  --cameraSpeed: 150; // Where 1 is the fastest, this var is a multiplying factor of --scenePerspective and --filmZ
+  --cameraZ: 300; // Initial camera position
+  --viewportHeight: 0; // Viewport height will allow us to set the depth of our scene
+}
+
