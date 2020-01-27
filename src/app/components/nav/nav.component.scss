@@ -1,0 +1,15 @@
+.siteName {
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+  position: fixed;
+  bottom: 5rem;
+  left: 1rem;
+  text-align: center;
+  .logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+  }
+}

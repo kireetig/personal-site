@@ -3,9 +3,22 @@
   --scenePerspective: 1;
   --scenePerspectiveOriginX: 50;
   --scenePerspectiveOriginY: 30;
-  --itemZ: 2; // Gap between each cards
+  --itemZ: 1; // Gap between each cards
   --cameraSpeed: 150; // Where 1 is the fastest, this var is a multiplying factor of --scenePerspective and --filmZ
-  --cameraZ: 300; // Initial camera position
+  --cameraZ: 0; // Initial camera position
   --viewportHeight: 0; // Viewport height will allow us to set the depth of our scene
+}
+
+// ----------
+// Styling
+// ----------
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:900");
+
+body {
+  background-color: hsl(231, 15%, 18%);
+  color: hsl(231, 15%, 18%);
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
 }
 

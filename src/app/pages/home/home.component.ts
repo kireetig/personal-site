@@ -26,15 +26,33 @@ export class HomeComponent implements OnInit {
   constructor(private http: HttpClient) {
   }
 
-  films = [];
+
+  films = [{
+    title: 'About Me (Professional)',
+    description: `I am Javascript enthusiastic. I have 4 years of experience in working on different Javascript/Typescript technologies like
+     React Js, Angular. Node Js etc.,
+     I like learning technologies related to javascript and typescript on my free time.
+     I try to implement them. I like implement difficult logic, basically what drives me is challenge.
+      I want my work to be one of the best.`
+  }, {
+    title: 'About Me (Non-professional)',
+    description: `I like travelling, playing sports and watching tv. I play Badminton, Tennis, football.
+    I tried most sports and i like learning more. Life is short keeping learning and enjoying.
+    I value family and relationships`
+  },{
+    title: 'Professional History',
+    description: null,
+    innerHtml: `<ul>
+<li><div>
+MSP Hitect SDN BHD (Kuala Lumpur, Malaysia) Software Engineer - January 2019 to Till Date
+</div></li>
+</ul>`
+  }];
 
   ngOnInit() {
-    this.http.get('https://ghibliapi.herokuapp.com/films').subscribe((res: any) => {
-      this.films = res;
-      window.addEventListener('scroll', this.moveCamera);
-      window.addEventListener('mousemove', this.moveCameraAngle);
-      this.setSceneHeight();
-    });
+    window.addEventListener('scroll', this.moveCamera);
+    window.addEventListener('mousemove', this.moveCameraAngle);
+    this.setSceneHeight();
   }
 
   moveCameraAngle(event) {

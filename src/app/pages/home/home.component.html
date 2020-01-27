@@ -1,9 +1,11 @@
-<app-nav></app-nav>
 <div class="viewport">
   <div class="scene3D-container">
     <div class="scene3D">
-      <div *ngFor="let film of films">{{film.title}}</div>
-      <!--Etc.-->
+      <div *ngFor="let film of films">
+        <h4>{{film.title}}</h4>
+        <p *ngIf="film.description">{{film.description}}</p>
+        <div *ngIf="film.innerHtml" [innerHTML]="film.innerHtml"></div>
+      </div>
     </div>
   </div>
 </div>
