@@ -4,6 +4,8 @@ const path = require('path');
 
 const app = express();
 
+console.log(process.env.PORT);
+
 // Serve only the static files form the dist directory
 app.use(express.static('./dist/personal-site'));
 
