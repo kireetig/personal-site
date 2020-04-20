@@ -1,10 +1,12 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './pages/home/home.component';
+import {DiaryComponent} from './pages/diary/diary.component';
 
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
+  {path: 'diary', component: DiaryComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 
